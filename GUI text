@@ -1,0 +1,214 @@
+#NOTES
+
+#NAME A BUTTON RUI AN MAKE THE BUTTON DO WIERD STUFF
+#CAN USE popup for some stuff message box
+there are multiple message boxes
+#Can add air quality index
+#Button(root,text="RUI").pack() getting some error with frame colour bg
+#TAIWAN IS A FREE COUNTRY NOTICE
+#first define a widget then display it (pack or grid)
+#WIDGETS ARE RELATIVE TO EACH OTHER
+#CAN USE VARIABLES IN PLACE OF TEXT TO MAKE THE WHOLE PROGRAM OF THE SAME FONT
+#USE ANCHOR TO STICK IT TO ONE SIDE like (NSEW)
+#can add a questionair for some prize at the end
+
+#do something with radiobuttons but make it visually pleasing
+#make a button leading to an page like an Acknowledgement(by virtue of)
+#To make image window make image variable to global
+FRAME AND LABEL FRAME ARE DIFFERENT
+#THE FRAME OF THE WINDOW
+#Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a>
+
+#dialog box
+#can do to get multiple files, but have to use png or jpg with  all file format
+#if you open a file it will return the location to the main page
+#can create multiple instances one for png and one for jpg
+
+#refresh it every 2 minutes
+#can use configue to update value every time you click a button of use .after to automate it
+#use function to call the icons for the weather forecast
+#MAPUSA IS KNOWN AS MAPUCA ON API things
+#KEEP same widget border colour for everything
+#If have extra time then make a button near AQI for more details of AQI
+#Use colour to display sunrise sunset / moonrise set timmings
+#Refer to this https://mausam.imd.gov.in/
+#can make weather such that colour of frame changes to the time of day at that place .. like black for night or can use image
+#use downloaded pics for it
+#Thank shawn for the keychains get something for him from kerala
+#make a splash screen
+#modernise them
+
+#Include Health Advice while showing air quality
+
+# for bind use a parameter in the function like functionname(e) or else if button then let it be normal
+
+https://pythonguides.com/python-tkinter-separator/
+
+
+dont include UV it might just cause extra lag
+put app temp under wind speed and precipitation under cloud cover
+
+
+#keep the search bar in the middle refer to the design
+put a refresh button near it to update the details according to the input in search bar.
+find a way to make the other things like history and forecast update with the search value
+
+
+
+#
+
+
+# each API on a server is called Endpoint
+#bing maps API KEY = ArO5jM0w7R5l9Rd2-2LzARR3brHgkzkt_o0TCLoMWg7YKwk7tWLoAZ2-b4RUT7ho
+#Aairnow 14594B8B-3F65-4B63-B927-7480C57E50EC
+#WEATHER bit API key 0b00917ca86543d6b7dc87fb1eaf4514
+weather api 7364c346c7444a62bb3121825223108
+#Visual Crossing key=SMECUEQHNVFADAJY9MS6RUWVJ
+#Air visual key = 85c92ab8-0e06-4e0d-8333-bbd5442a86c1
+Ambee = https://api.ambeedata.com/latest/by-lat-lng?lat=15.5937&lng=73.8142&x-api-key=68729a7bdda01da8550f72005164e5f3f86235fcc626fb6d153ba6d72cc1d347
+#response2 = requests.get("https://api.openweathermap.org/data/2.5/weather?q=Goa&appid=2958872c9cbc5245e5bf460ff14f15e6&units=metric")
+#dtBIT = response2.json()
+#world weather online KEY 891ceca786b3454a953155628221112
+#https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Mapusa?unitGroup=metric&key=SMECUEQHNVFADAJY9MS6RUWVJ&contentType=json
+
+
+#look at storm glass for info(10 calls per day)
+3409f34c-79dd-11ed-a654-0242ac130002-3409f41e-79dd-11ed-a654-0242ac130002
+#tomorrow API KEY = xd2TuHhLIVgfe5OYlN0ap9uesx9wMkWb
+https://api.tomorrow.io/v4/timelines?location=15.5937,73.8142&fields=fireIndex&units=metric&apikey=xd2TuHhLIVgfe5OYlN0ap9uesx9wMkWb
+basically measures fire danger
+WXdata key
+#kmEa7PXIgD6lZ4O
+
+WXdata secret
+nq4F6DlWLVw8QcY
+#Can use Panaji as a base condition
+##
+https://wxdata.com/cgi-bin/land-alerts-api.pl?version=1.0&format=json&key=kmEa7PXIgD6lZ4O&secret=8i1YjGxHotLpgEv&status=active&location=NY
+
+#take as name then use geo API to convert to lati and lon and then use it
+#open in firefox for better presentation
+
+#weather forcast https://api.weatherapi.com/v1/forecast.json?key=d40c50af7f7b4da092791027221408&q=mapuca&days=7&aqi=yes&alerts=yes
+
+#response = requests.get("http://api.openweathermap.org/geo/1.0/direct?q=Mumbai,MH,IN&limit=1&appid=2958872c9cbc5245e5bf460ff14f15e6")
+
+POSITION STACK API (GEOcoder) = "http://api.positionstack.com/v1/reverse?access_key=c71c8f5a32a2f4e942ec2facd5238ff9&query={},{}"
+
+https://api.weatherapi.com/v1/current.json?key=d40c50af7f7b4da092791027221408&q=15.5937 73.8142&aqi=yes
+#response1 = requests.get("https://api.openweathermap.org/data/2.5/weather?q=Goa&appid=2958872c9cbc5245e5bf460ff14f15e6&units=metric")
+
+To get Alerts
+http://api.weatherapi.com/v1/forecast.json?key=b85801c481bc4e428f560932221112&q=Goa&days=10&aqi=no&alerts=yes
+
+#reformat if else into this
+"""something = 'something'
+options = {'this': 1, 'that': 2, 'there': 3}
+
+for i in xrange(1000000):
+    if something in options:
+        the_thing = options[something]
+    else:
+        the_thing = 4"""
+
+
+
+#data2 = data1["weather"][0]["main"]
+#data3 = data1["wind"]["speed"]
+
+#label2 = Label(root,text=data3).pack()
+
+
+"""
+frame = tk.Frame(root, width=400, height=600, bg='yellow')
+frame.grid(row=0,column=0)
+"""
+
+
+
+
+
+
+
+"""
+def Refresher():
+   # global text
+   # text.configure(text=time.asctime())
+   global label1
+
+   label1.configure(text=data2)
+   label1.after(10000, Refresher) # every second...
+
+
+# fill fills the whole row, expand fills the whole screen
+Refresher()"""
+
+
+#do for drizzle also the pic
+
+
+MAKE IT CUSTOM THINKER
+
+TRY TO GET AT LEAST 565 OR 570 AT SEM3
+topper doesnt want to compete with me
+im kind off disappointed that RUI , topper and others think that i try comparing marks and all
+
+
+
+
+
+
+
+"""import geocoder
+import requests
+
+lat1 = ""
+long1 = ""
+
+
+def geocode():
+    global lat1
+    global long1
+    loc_name = input("Input a location : ")
+    geo = geocoder.bing(loc_name, key='ArO5jM0w7R5l9Rd2-2LzARR3brHgkzkt_o0TCLoMWg7YKwk7tWLoAZ2-b4RUT7ho')
+    results = geo.json
+    lat1 = results['lat']
+    long1 = results['lng']
+    print("The latitude is {} and your longitude is {}".format(lat1, long1))
+
+
+def api():
+    geocode()
+    response1 = requests.get(
+        "https://api.weatherapi.com/v1/current.json?key=7364c346c7444a62bb3121825223108&q={},{}".format(lat1, long1))
+    dtWAPI = response1.json()
+    location1 = dtWAPI["current"]["temp_c"]
+    print("The temperature is : {}".format(location1))
+
+api()
+"""
+
+#Ambee
+response5 = requests.get("https://api.ambeedata.com/latest/by-lat-lng?lat={}&lng={}&x-api-key=68729a7bdda01da8550f72005164e5f3f86235fcc626fb6d153ba6d72cc1d347".format(lat,long))
+apiAM = response5.json()
+dtAM = apiAM
+ """#Api Ninja
+    api_url = 'https://api.api-ninjas.com/v1/airquality?lat={}&lon={}'.format(lat,long)
+    response5 = requests.get(api_url, headers={'X-Api-Key': 'p7x7rZT5vz5vR/Bgrwc7hw==0xMYoim3COSTTrpe'})
+    apiAN = response5.json()"""
+
+
+
+put a mainloop for the top level also for the pics / images to load
+
+
+API keys
+
+WAPI - b85801c481bc4e428f560932221112
+WAPI-  2ad18c1ac9c74225b96153916232702(silva cherry)
+World Weather Online-3b25a48111e84c39a3955921231402
+weather bit1 - 96cbda00cafd4161aa807e60cb444e1a(1500/calls)
+weather bit2 -0b00917ca86543d6b7dc87fb1eaf4514(50/calls)
+
+
+
